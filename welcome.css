@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-size: 38px;
+}
+
+div{
+    justify-content: center;
+    display: flex;
+    margin-inline: auto;
+}
+
+a:hover{
+    scale: 1.2;
+}
+
+a{
+    color: transparent;
+    text-align: center;
+    animation: 3.5s linear 5s forwards running reveal;
+}
+
+@keyframes reveal{
+from{opacity: 0%; color: red; box-shadow: 0px 0px 50px red}
+
+to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
+}
+
+.typewriter{
+    display: flex;
+}
+
+.typewriter h1{
+    font-family: monospace;
+    overflow: hidden;
+
+    white-space: nowrap; /*Confines the text onto a single ine*/
+    border-right: 1px solid;
+
+    animation: typing 5s steps(40) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+    border-color: transparent;
+}}
+
+#background{
+    z-index: -2;
+    position: relative;
+    inset: 0;
+    width: 100%;
+    height: 400vh;
+}
+
+.bubble{
+    --small: 80px;
+    --medium: 120px;
+    --large: 160px;
+
+    z-index: -1;
+    height: var(--small);
+    width: var(--small);
+    opacity: 0;
+
+    position: absolute;
+
+    border-radius: 50%;
+    animation: pop 4s 6s linear infinite;
+    box-shadow: 0px 0px 10px aquamarine;
+    /*top: 50%;
+    left: 20%;*/
+}
+
+.bubble:nth-child(1){
+    animation-delay: 3.5s;
+}
+
+.bubble:nth-child(2n+3){
+    width: var(--medium);
+    height: var(--medium);
+}
+
+
+.bubble:nth-child(5n){
+    width: var(--large);
+    height: var(--large);
+}
+
+/*
+.bubble:nth-child(4n+3){
+    top: 85%;
+    left: 80%;
+}
+
+.bubble:nth-child(3n+2){
+    top: 30%;
+    left: 30%;
+}
+
+.bubble:nth-child(2n){
+    top: 40%;
+    left: 50%;
+}
+*/
+@keyframes pop{
+
+    0%{
+        scale: 0%;
+        opacity: 0;
+    }
+    90%{
+        scale: 100%;
+        opacity: 90%;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
