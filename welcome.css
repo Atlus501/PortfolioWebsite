@@ -37,7 +37,7 @@ a{
 @keyframes reveal{
 from{opacity: 0%; color: red; box-shadow: 0px 0px 50px red}
 
-to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
+to{opacity: 100%; color: gold;}
 }
 
 .typewriter{
@@ -84,6 +84,7 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
     --medium: 120px;
     --large: 160px;
 
+
     z-index: -1;
     height: var(--small);
     width: var(--small);
@@ -91,13 +92,8 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
 
     position: absolute;
 
-    background-color: rgba(0, 0, 255, 80);
     border-radius: 50%;
-    box-shadow: 0px 0px 10px aquamarine;
-}
-
-.bubble:nth-child(1){
-    animation-delay: 3.5s;
+    box-shadow: 0px 0px 15px gold;
 }
 
 .bubble:nth-child(2n+3){
