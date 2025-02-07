@@ -3,14 +3,22 @@
 
 <head>
     <title>Game Time</title>
-    <style href="main.css"></style>
+    <link rel="stylesheet" href="main.css"></link>
+    <link rel="stylesheet" href="game.css"></link>
 </head>
 
 <body>
 
 <div>
-    <h1>Let's Play!</h1>
+    <h1 class = "headline">Without further ado, let's Play!</h1>
+    <h3 class = "headline">Let's see if you can type the following sentence within one minute</h3>
+    <h3 id = "timeHolder"></h3>
 </div>
+
+<div class = "center">
+<textarea type="text" id = "underInput" placeholder="Type here!"></textarea>
+</div>
+<script src="game.js"></script>
 
 </body>
 </html>

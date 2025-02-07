@@ -1,0 +1,15 @@
+#timeHolder{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+    border: 2px solid gold;
+    background-color:transparent;
+    color: white;
+    margin-top: 0px;
+}
