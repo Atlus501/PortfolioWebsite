@@ -1,24 +1,20 @@
 function createCircle() {
-    const background = document.getElementById('background');
-    const bubble = document.createElement('div');
-    bubble.classList.add('bubble');
+    let background = document.getElementById('background');
 
-    // Random positions
+    let bubble = document.createElement('div');
 
-   /*
-    x = Math.floor(Math.random() * 80 + 20);
-    y = Math.floor(Math.random() * 80 + 20);
+    bubble.className = "bubble";
+
+    const x = Math.random() * (100);
+    const y = Math.random() * (100);
+
+    let duration = Math.random() * 6 + 2;
+    let delay = Math.random() * 2.5 + 2.5;
 
     bubble.style.left = `${x}%`;
     bubble.style.top = `${y}%`;
-*/
-    
 
-    const x = Math.random() * (background.clientWidth - bubble.clientWidth);
-    const y = Math.random() * (background.clientHeight - bubble.clientHeight);
-
-    bubble.style.left = `${x}px`;
-    bubble.style.top = `${y}px`;
+    bubble.style.animation = 'pop '+duration+'s '+delay+'s ease-out infinite';
 
     background.appendChild(bubble);
 }

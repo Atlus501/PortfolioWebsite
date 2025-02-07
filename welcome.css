@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 h1{
@@ -7,10 +8,20 @@ h1{
     font-size: 38px;
 }
 
-div{
+.display{
     justify-content: center;
     display: flex;
     margin-inline: auto;
+}
+
+.visible{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
 }
 
 a:hover{
@@ -31,6 +42,7 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
 
 .typewriter{
     display: flex;
+    z-index: -1;
 }
 
 .typewriter h1{
@@ -60,11 +72,11 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
 }}
 
 #background{
-    z-index: -2;
-    position: relative;
     inset: 0;
+    position: absolute;
+    z-index: -2;
     width: 100%;
-    height: 400vh;
+    height: 100%;
 }
 
 .bubble{
@@ -79,11 +91,9 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
 
     position: absolute;
 
+    background-color: rgba(0, 0, 255, 80);
     border-radius: 50%;
-    animation: pop 4s 6s linear infinite;
     box-shadow: 0px 0px 10px aquamarine;
-    /*top: 50%;
-    left: 20%;*/
 }
 
 .bubble:nth-child(1){
@@ -95,28 +105,11 @@ to{opacity: 100%; color: gold; box-shadow: 0px 0px 25px gold;}
     height: var(--medium);
 }
 
-
 .bubble:nth-child(5n){
     width: var(--large);
     height: var(--large);
 }
 
-/*
-.bubble:nth-child(4n+3){
-    top: 85%;
-    left: 80%;
-}
-
-.bubble:nth-child(3n+2){
-    top: 30%;
-    left: 30%;
-}
-
-.bubble:nth-child(2n){
-    top: 40%;
-    left: 50%;
-}
-*/
 @keyframes pop{
 
     0%{
