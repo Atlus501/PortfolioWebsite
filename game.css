@@ -5,11 +5,22 @@
     margin-bottom: 5px;
 }
 
-textarea{
-    width: 95%;
-    height: 100px;
-    border: 2px solid gold;
-    background-color:transparent;
+#entry{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 15px;
+    height: 18px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
     color: white;
-    margin-top: 0px;
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2px solid gold;
+    text-align: center;
 }
