@@ -9,7 +9,7 @@ function createCircle() {
     const y = Math.random() * (80)+10;
 
     let duration = Math.random() * 6 + 2;
-    let delay = Math.random() * 2.5 + 2.5;
+    let delay = Math.random() * 2.5 + 5.5;
 
     bubble.style.left = `${x}%`;
     bubble.style.top = `${y}%`;

@@ -34,7 +34,7 @@ function respondHelper(x){
     }
 
     if(x==3){
-        setTimeout(function(){window.location.href = 'game.html'}, 6000);
+        setTimeout(function(){window.location.href = 'game.html'}, 4000);
     }
 }
 
