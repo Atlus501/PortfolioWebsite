@@ -12,14 +12,6 @@ body{
     animation: sunrise 5s linear forwards;
 }
 
-@keyframes sunrise{
-
-    0%{background: black}
-    99%{background:linear-gradient(black 40%, pink 100%);
-    }
-    /*linear-gradient(black 40%, pink 100%)*/
-}
-
 .starfall{
     position: absolute;
     z-index: -2;
